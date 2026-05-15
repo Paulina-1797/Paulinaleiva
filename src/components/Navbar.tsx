@@ -22,7 +22,7 @@ export default function Navbar() {
       <div className="max-w-5xl mx-auto">
         <div className="bg-white/[0.03] backdrop-blur-xl border border-white/[0.05] rounded-full px-8 h-16 flex justify-between items-center shadow-2xl shadow-black/20">
           <div className="flex-shrink-0">
-            <span className="text-white font-bold text-xl tracking-tighter">Paulina</span>
+            <span className="text-white font-bold text-xl tracking-tighter">PAULINA.</span>
           </div>
 
           <div className="hidden md:flex items-center space-x-10">
