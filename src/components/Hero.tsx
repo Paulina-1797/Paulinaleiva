@@ -14,7 +14,7 @@ export default function Hero() {
           >
             <div className="flex items-center gap-3 mb-8">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="text-[10px] uppercase font-bold tracking-[0.3em] text-white/40">Visual Designer & Strategist</span>
+              <span className="text-[10px] uppercase font-bold tracking-[0.3em] text-white/40">Visual Designer & Web creator</span>
             </div>
             
             <h1 className="text-6xl md:text-8xl font-medium text-white leading-[1.05] tracking-tight mb-10">
