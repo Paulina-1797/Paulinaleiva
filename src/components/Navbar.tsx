@@ -39,7 +39,7 @@ export default function Navbar() {
 
           <div>
             <button className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest transition-all">
-              <a href="">CV.PDF</a>
+              <a href="CV/Paulina Leiva.pdf" Download>CV.PDF</a>
             </button>
           </div>
 
