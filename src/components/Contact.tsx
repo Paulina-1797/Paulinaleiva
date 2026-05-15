@@ -23,7 +23,7 @@ export default function Contact() {
             <div className="space-y-6">
               <a href="mailto:hola@paulei.design" className="block group">
                 <span className="text-[10px] uppercase font-bold tracking-widest text-white/20 block mb-1">Email</span>
-                <span className="text-2xl text-white group-hover:text-primary transition-colors border-b border-white/5 pb-1">hola@paulei.design</span>
+                <span className="text-2xl text-white group-hover:text-primary transition-colors border-b border-white/5 pb-1">paulinaleivat@gmail.com</span>
               </a>
               <div className="flex gap-6 pt-4">
                 {[Instagram, Linkedin].map((Icon, i) => (
