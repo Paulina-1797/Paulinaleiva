@@ -1,0 +1,8 @@
+{
+  "name": "Design Portfolio & Blog",
+  "description": "Portafolio interactivo de diseño gráfico, UI/UX y marketing digital con sección de blog y contacto.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

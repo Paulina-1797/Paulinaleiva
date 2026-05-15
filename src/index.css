@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #7F49B4; /* MODIFICA ESTO PARA CAMBIAR EL COLOR PRINCIPAL */
+  --color-dark: #0A0A0A;    /* COLOR DE FONDO */
+  --color-accent: #E0E0E0;  /* COLOR DE TEXTO */
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-dark text-accent antialiased selection:bg-primary/30;
+    /* Fondo con gradiente sutil */
+    background-image: 
+      radial-gradient(circle at 50% -20%, rgba(127, 73, 180, 0.1) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 30px rgba(127, 73, 180, 0.5);
+  }
+  .glass-card {
+    @apply bg-white/[0.01] backdrop-blur-md border border-white/[0.05] transition-all duration-500 rounded-3xl;
+  }
+  
+  /* CLASE PARA CUADROS DE TEXTO (GRISES QUE CAMBIAN A COLOR AL HOVER) */
+  .input-field {
+    @apply w-full bg-[#1A1A1A] border border-white/5 px-6 py-4 text-white placeholder:text-white/20 rounded-2xl outline-none transition-all duration-300;
+  }
+  .input-field:hover {
+    @apply border-primary/50 bg-[#1A1A1A] shadow-lg shadow-primary/5;
+  }
+  .input-field:focus {
+    @apply border-primary ring-4 ring-primary/10 bg-[#1A1A1A];
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-dark;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full border-4 border-dark;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary;
+}
